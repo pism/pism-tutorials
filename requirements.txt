@@ -1,0 +1,14 @@
+boto3
+cf-xarray
+cf_units
+cftime
+dask[distributed,dataframe]
+h5netcdf
+jupyter
+matplotlib
+pandas
+rioxarray
+seaborn
+shapely
+tqdm
+xarray
