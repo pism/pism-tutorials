@@ -16,3 +16,4 @@ scipy
 shapely
 tqdm
 xarray
+xskillscore

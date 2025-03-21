@@ -1,4 +1,3 @@
-[![DOI](https://zenodo.org/badge/562988605.svg)](https://zenodo.org/badge/latestdoi/562988605)
 [![License: GPL-3.0](https://img.shields.io:/github/license/pism/pypac)](https://opensource.org/licenses/GPL-3.0)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Checked with mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org/)
@@ -12,23 +11,14 @@
 PISM Tutorials
 
 
-## Installation
+## How To Use This Jupyter Book
 
-Get pism-ragis source from GitHub:
+>0. ### Install the software environment needed to run the notebooks
+>
+>    - Run the **Install Required Software with Conda** notebook ([0_Software_Environment.ipynb](0_Software_Environment.ipynb))
+>    - Rerun this step periodically. Updates to environment config files will not take effect unless you update or recreate your environment.
+>
 
-    $ git clone git@github.com:pism/pism-tutorials.git
-    $ cd pism-ragis
-
-Optionally create Conda environment named *pism-tutorials*:
-
-    $ conda env create -f environment.yml
-    $ conda activate pism-tutorials
-
-or using Mamba instead:
-
-    $ mamba env create -f environment.yml
-    $ mamba activate pism-tutorials
-
-Install pism-tutorials:
-
-    $ pip install .
+>1. ### Introduction to PISM
+>
+>    - Run the **Getting Started** notebook ([1_Getting_Started.ipynb](1_Getting_Started.ipynb))
