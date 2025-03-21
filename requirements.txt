@@ -9,7 +9,9 @@ matplotlib
 pandas
 pint_xarray
 rioxarray
+s3fs
 seaborn
+scipy
 shapely
 tqdm
 xarray
