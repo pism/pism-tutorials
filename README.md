@@ -4,6 +4,10 @@
 [![Checked with mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org/)
 [![linting: pylint](https://img.shields.io/badge/linting-pylint-yellowgreen)](https://github.com/pylint-dev/pylint)
 
+
+<img src="pism_logo.png" alt="PISM logo" width="25%"/>
+
+
 # pism-tutorials
 PISM Tutorials
 

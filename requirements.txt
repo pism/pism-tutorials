@@ -5,6 +5,7 @@ cftime
 dask[distributed,dataframe]
 h5netcdf
 jupyter
+jupyter-book
 matplotlib
 pandas
 pint_xarray

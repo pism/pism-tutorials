@@ -1,0 +1,9 @@
+format: jb-book
+root: README
+parts:
+  - caption: Start Here
+    chapters:
+      - file: README.md
+  - caption: Getting Started
+    chapters:
+      - file: 1_Getting_Started.ipynb
