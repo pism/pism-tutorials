@@ -15,7 +15,7 @@
 
 ## History of PISM
 
-Learn about the history of PISM in [history.md](A Brief History of PISM).
+Learn about the history of PISM in [A Brief History of PISM](history.md).
 
 ## How To Use The PISM Tutorials
 
