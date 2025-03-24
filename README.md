@@ -11,6 +11,8 @@
 
 ## Introdution to Ice Flow Modeling
 
+How does a glacier flow? Learn about Stokes equations and approximations to it, conservation equations, and material equations. Partial Differential Equations (PDEs), initial and boundary conditions, in [Ice Flow](ice_flow.md).
+
 ## What is PISM
 
 ## History of PISM
