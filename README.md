@@ -10,8 +10,15 @@
 # pism-tutorials
 PISM Tutorials
 
+>. ### Introdution to Ice Flow Modeling
 
-## How To Use This Jupyter Book
+>. ### What is PISM
+
+>. ### History of PISM
+>
+>     - Learn about the history of PISM in [history.md](A Brief History of PISM)
+
+## How To Use The PISM Tutorials
 
 >0. ### Install the software environment needed to run the notebooks
 >
