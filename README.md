@@ -8,15 +8,14 @@
 
 
 # pism-tutorials
-PISM Tutorials
 
->. ### Introdution to Ice Flow Modeling
+## Introdution to Ice Flow Modeling
 
->. ### What is PISM
+## What is PISM
 
->. ### History of PISM
->
->     - Learn about the history of PISM in [history.md](A Brief History of PISM)
+## History of PISM
+
+Learn about the history of PISM in [history.md](A Brief History of PISM).
 
 ## How To Use The PISM Tutorials
 
