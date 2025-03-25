@@ -1,15 +1,17 @@
-The flow of glaciers can be described as Stokes flow, obeying conservation equations for *mass*, *linear momentum*, and *energy* (*angular momentum* results in a symmetric stress tensor)
+# Introduction to Ice Flow
 
-### Conservation Equations
+The flow of glaciers can be described as Stokes flow, obeying conservation equations for *mass*, *linear momentum*, and *energy* (*angular momentum* results in a symmetric stress tensor).
+
+## Conservation Equations
 $$
 \begin{aligned}
-\textrm{mass}:  &\nabla \cdot \mathbf{v} & = & 0 \\
-\textrm{momentum}:  & \nabla \left( \eta \nabla \cdot \mathbf{v} \right) - \rho \mathbf{g} & = & 0 \\
-\textrm{energ}: & \frac{\mathrm{d} E}{\mathrm{d} t}
+\textrm{mass}:  &-\nabla \cdot \mathbf{v} & = & 0  & \textrm{in} \Omega\\
+\textrm{momentum}:  & \nabla \left(-p \mathrm{1} + 2 \eta \mathrm{D} \right) & = & \rho \mathbf{g}  & \textrm{in} \Omega\\
+\textrm{energy}: & \frac{\mathrm{d} E}{\mathrm{d} t}
 \end{aligned}
 $$
 
-### Closure Equations (Material Equations)
+## Closure Equations (Material Equations)
 
 The Stokes problem has more unknowns that equations, requiring additional equations called *closure equations* or *material equations*. These *closure equations* are not as fundamental as the *conservation equations* and are frequently determined by laboratory or field experiments.
 The visosity of ice, $\eta = A(T) \left(v \right)$. Ice has a memory, which significantly complicates the simulation of glaciers.

@@ -4,29 +4,64 @@
 [![linting: pylint](https://img.shields.io/badge/linting-pylint-yellowgreen)](https://github.com/pylint-dev/pylint)
 
 
-<img src="pism_logo.png" alt="PISM logo" width="25%"/>
-
+```{image} img/pism_logo.png
+:alt: PISM Logo
+:width: 25%
+:align: left
+```
 
 # pism-tutorials
 
-## Introduction to Ice Flow Modeling
+PISM is awesome.
 
-How does a glacier flow? Learn about Stokes equations and approximations to it, conservation equations, and material equations. Partial Differential Equations (PDEs), initial and boundary conditions, in [Ice Flow](ice_flow.md).
 
-## What is PISM
+```{image} img/header_greenland.jpg
+:alt: PISM Greenland Simulated Surface Speeds
+:width: 75%
+:align: center
+```
 
-## History of PISM
 
-Learn about the history of PISM in [A Brief History of PISM](history.md).
+## Installation
 
-## How To Use The PISM Tutorials
+Get pism-tutorials source from GitHub:
 
->0. ### Install the software environment needed to run the notebooks
->
->    - Run the **Install Required Software with Conda** notebook ([0_Software_Environment.ipynb](0_Software_Environment.ipynb))
->    - Rerun this step periodically. Updates to environment config files will not take effect unless you update or recreate your environment.
->
+    $ git clone git@github.com:pism/pism-tutorials.git
+    $ cd pism-tutorials
 
->1. ### Introduction to PISM
->
->    - Run the **Getting Started** notebook ([1_Getting_Started.ipynb](1_Getting_Started.ipynb))
+Optionally create Conda environment named *pism-tutorials*:
+
+    $ conda env create -f environment.yml
+    $ conda activate pism-tutorials
+
+or using Mamba instead:
+
+    $ mamba env create -f environment.yml
+    $ mamba activate pism-tuorials
+
+Install pism-tutorials:
+
+    $ pip install .
+
+
+## Building a Jupyter Book
+
+Run the following command in your terminal:
+
+```bash
+jb build .
+```
+
+If you would like to work with a clean build, you can empty the build folder by running:
+
+```bash
+jb clean .
+```
+
+If jupyter execution is cached, this command will not delete the cached folder.
+
+To remove the build folder (including `cached` executables), you can run:
+
+```bash
+jb clean --all .
+```
