@@ -145,8 +145,3 @@ obtain a \*finite viscosity*
   :label: eq:viscosity-strainrate-finite
   \eta^{-1} = \left( \frac{1}{2}A^{-\frac{1}{n}} \,\dot{\epsilon}^{-\frac{n-1}{n}} \right)^{-1} + \eta_0^{-1}.
 ```
-
-## References
-```{bibliography} references.bib
-:filter: docname in docnames
-```
