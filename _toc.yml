@@ -8,3 +8,6 @@ parts:
   - caption: Getting Started
     chapters:
       - file: 1_Getting_Started.ipynb
+  - caption: References
+    chapters:
+      - file: references.md
