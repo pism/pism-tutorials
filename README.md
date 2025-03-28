@@ -4,7 +4,7 @@
 [![linting: pylint](https://img.shields.io/badge/linting-pylint-yellowgreen)](https://github.com/pylint-dev/pylint)
 
 
-```{image} img/pism_logo.png
+```{image} ./img/pism_logo.png
 :alt: PISM Logo
 :width: 25%
 :align: left
@@ -13,10 +13,8 @@
 
 # pism-tutorials
 
-PISM is awesome.
 
-
-```{image} img/header_greenland.jpg
+```{image} ./img/header_greenland.jpg
 :alt: PISM Greenland Simulated Surface Speeds
 :width: 75%
 :align: center
