@@ -4,13 +4,13 @@
 The flow of glaciers can be described as Stokes flow, obeying conservation equations for *mass*, *linear momentum*, and *energy* (*angular momentum* results in a symmetric stress tensor).
 
 ## Conservation Equations
-$$
+```{math}
 \begin{aligned}
-\textrm{mass}:  &-\nabla \cdot \mathbf{v} & = & 0  & \textrm{in} \Omega\\
-\textrm{momentum}:  & \nabla \left(-p \mathrm{1} + 2 \eta \mathrm{D} \right) & = & \rho \mathbf{g}  & \textrm{in} \Omega\\
+\textrm{mass}:  &-\nabla \cdot \mathbf{v} & = &\, 0  & \textrm{in} \, \Omega\\
+\textrm{momentum}:  & \nabla \left(-p \mathrm{1} + 2 \eta \mathrm{D} \right) & = &\, \rho \mathbf{g}  & \textrm{in} \, \Omega\\
 \textrm{energy}: & \frac{\mathrm{d} E}{\mathrm{d} t}
 \end{aligned}
-$$
+```
 
 ## Closure Equations (Material Equations)
 
@@ -22,14 +22,15 @@ Unfortunately, the initial state cannot be described by observations alone (thin
 
 The most widely used flow relation for glacier ice is
 {cite:t}`Glen1955,Steinemann1954`
-  \begin{equation}
-  \label{eq:Glen} \dot{\varepsilon}_{ij} = A \tau^{n-1}\sigma^{(d)}_{ij},
-\end{equation}
+```{math}
+:label: eq:Glen
+\dot{\varepsilon}_{ij} = A \tau^{n-1}\sigma^{(d)}_{ij},
+```
 where $\dot{\varepsilon}_{ij}$ and $\sigma^{(d)}_{ij}$ are the strain rate tensor and the deviatoric stress tensor, respectively. $n \in [1, 4]$ is the exponent of the flow, with $n=3$ the most commonly used value. The rate factor $A = A(T,\ldots)$ depends on temperature and other parameters
 like water content, impurity content and crystal size.  The quantity
 $\tau$ is the second invariant of the deviatoric stress tensor, $\tau = \frac{1}{2}\sigma^{(d)}_{ij}\sigma^{(d)}_{ji}$.
 
-Several properties of Equation (\ref{eq:Glen}) are noteworthy:
+Several properties of Equation {eq}`eq:Glen` are noteworthy:
 
 - Elastic effects are neglected.  This is reasonable if processes on the
   time scale of days and longer are considered. But elastic effects are relevant to understand tidal flexure of ice shelves.
@@ -45,11 +46,11 @@ Several properties of Equation (\ref{eq:Glen}) are noteworthy:
   \frac{\partial v_z}{\partial z} = 0 $. Incompressibility is a pretty good assumptions anywhere in a glacier execpt for firn.
 - A *Newtonian viscous fluid*, like water, is characterized by
   the *viscosity* $\eta$
-  \begin{equation}
-    \label{eq:viscosity-newtonian}
+  ```{math}
+    :label: eq:viscosity-newtonian
   \dot{\varepsilon}_{ij} = \frac{1}{2\eta} \sigma^{(d)}_{ij}.
-  \end{equation}
-  By comparison with Equation (\ref{eq:Glen}) we find that viscosity of
+  ```
+  By comparison with Equation {eq}`eq:Glen` we find that viscosity of
   glacier ice is $\eta=\frac{1}{2A\tau^{n-1}}$.
 - Polycrystalline glacier ice is a *viscous fluid* with a
   *stress dependent viscosity* (or, equivalently, a strain rate
@@ -71,77 +72,76 @@ describe most processes relevant to glacier dynamics at large scale.
 \subsection{Inversion of the flow relation}
 \label{sec:invers-flow-relat}
 
-The flow relation of Equation (\ref{eq:Glen}) can be inverted so that stresses
-are expressed in terms of strain rates.  Multiplying equation (\ref{eq:Glen})
+The flow relation of Equation {eq}`eq:Glen` can be inverted so that stresses
+are expressed in terms of strain rates.  Multiplying equation {eq}`eq:Glen`
 with itself gives
 %
-\begin{align}
+```{math}
+\begin{aligned}
   \qquad \qquad\dot{\varepsilon}_{ij}\dot{\varepsilon}_{ij} & = A^2 \tau^{2(n-1)}\sigma^{(d)}_{ij}\sigma^{(d)}_{ij}
   \qquad \qquad (\textrm{multiply by }\frac{1}{2}) \notag\\
   \underbrace{\frac{1}{2}\dot{\varepsilon}_{ij}\dot{\varepsilon}_{ij}}_{\dot{\epsilon}^2} &
   = A^2
   \tau^{2(n-1)}\underbrace{\frac{1}{2}\sigma^{(d)}_{ij}\sigma^{(d)}_{ij}}_{\tau^2}
   \notag
-\end{align}
+\end{aligned}
+```
 %
 where we have used the definition for the *effective strain rate*
 $\dot{\epsilon} = \dot{\varepsilon}_e$, in
 analogy to the *effective shear stress* $\tau = \sigma_e$
 %
-\begin{equation}
-  \label{eq:epsdot-e}
+```{math}
+:label: eq:epsdot-e
   \dot{\epsilon} = \sqrt{\frac{1}{2}\dot{\varepsilon}_{ij}\dot{\varepsilon}_{ij}}\,.
-\end{equation}
+```
 %
 This leads to a relation between tensor invariants
 %
-\begin{equation}
-  \label{eq:Glen-invariants}
+```{math}
+:label: eq:Glen-invariants
   \dot{\epsilon}  =  A\tau^n\,.
-\end{equation}
+```
 %
 Coincidentally this is also the equation to describe simple shear, the most
 important part of ice deformation in glaciers
 %
-\begin{equation}
-  \label{eq:Glen-simple-shear}
+```{math}
+:label: eq:Glen-simple-shear
   \dot{\epsilon}_{xz}  =  A\sigma^{(d)}_{xz} {}^n\,.
-\end{equation}
+```
 %
-Now we can invert the flow relation Equation (\ref{eq:Glen})
+Now we can invert the flow relation Equation {eq}`eq:Glen`
 %
-\begin{align}
-  \label{eq:Glen-inverse}
+```{math}
+:label: eq:Glen-inverse
+\begin{aligned}
   \sigma^{(d)}_{ij} &= A^{-1}\tau^{1-n} \,\dot{\varepsilon}_{ij} \notag\\
   \sigma^{(d)}_{ij} &= A^{-1} A^\frac{n-1}{n}\, \dot{\epsilon}^{-\frac{n-1}{n}} \,\dot{\varepsilon}_{ij} \notag\\
   \sigma^{(d)}_{ij} &= A^{-\frac{1}{n}} \,\dot{\epsilon}^{-\frac{n-1}{n}}\, \dot{\varepsilon}_{ij}\,.
-\end{align}
+\end{aligned}
+```
 %
 The above relation allows us to calculate the stress state if the strain rates
 are known (from measurements).  Notice that only deviatoric stresses can be
 calculated. The mean stress (pressure) cannot be determined because of the
-incompressibility of the ice.  Comparing Equation (\ref{eq:Glen-inverse}) with
-(\ref{eq:viscosity-newtonian}) we see that the shear viscosity is
+incompressibility of the ice.  Comparing Equation {eq}`eq:Glen-inverse` with
+{eq}`eq:viscosity-newtonian` we see that the shear viscosity is
 %
-\begin{equation}
-  \label{eq:viscosity-strainrate}
+```{math}
+  :label: eq:viscosity-strainrate
   \eta = \frac{1}{2}A^{-\frac{1}{n}} \,\dot{\epsilon}^{-\frac{n-1}{n}}.
-\end{equation}
+```
 %
 Polycrystalline ice is a *strain rate softening*  material: viscosity
 decreases as the strain rate increases.
 
-Notice that the viscosity given in Equation (\ref{eq:viscosity-strainrate})
+Notice that the viscosity given in Equation {eq}`eq:viscosity-strainrate`
 becomes infinite at very low strain rates, which of course is unphysical.  One
 way to alleviate that problem is to add a small quantity $\eta_{o}$ to
 obtain a \*finite viscosity*
 %
-\begin{equation}
-  \label{eq:viscosity-strainrate-finite}
+```{math}
+  :label: eq:viscosity-strainrate-finite
   \eta^{-1} = \left( \frac{1}{2}A^{-\frac{1}{n}} \,\dot{\epsilon}^{-\frac{n-1}{n}} \right)^{-1} + \eta_0^{-1}.
-\end{equation}
-
-## References
-```{bibliography} references.bib
-:filter: docname in docnames
 ```
