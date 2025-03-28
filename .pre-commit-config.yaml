@@ -55,7 +55,7 @@ repos:
             "--extension-pkg-whitelist=scipy",
           ]
 
-  # - repo: https://github.com/srstevenson/nb-clean
-  #   rev: 4.0.1
-  #   hooks:
-  #    - id: nb-clean
+  - repo: https://github.com/srstevenson/nb-clean
+    rev: 4.0.1
+    hooks:
+     - id: nb-clean
