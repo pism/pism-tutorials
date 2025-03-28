@@ -36,7 +36,7 @@ Optionally create Conda environment named *pism-tutorials*:
 or using Mamba instead:
 
     $ mamba env create -f environment.yml
-    $ mamba activate pism-tuorials
+    $ mamba activate pism-tutorials
 
 Install pism-tutorials:
 
