@@ -7,7 +7,7 @@ parts:
       - file: history.md
   - caption: Getting Started
     chapters:
-      - file: 1_Getting_Started.ipynb
+      - file: 1_A_Basic_Example.ipynb
   - caption: References
     chapters:
       - file: references.md

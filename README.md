@@ -4,21 +4,11 @@
 [![linting: pylint](https://img.shields.io/badge/linting-pylint-yellowgreen)](https://github.com/pylint-dev/pylint)
 
 
-```{image} ./img/pism_logo.png
-:alt: PISM Logo
-:width: 25%
-:align: left
-```
-
+[![This shows the PISM logo.](img/pism_logo.png)](https://github.com/pism/logo)
 
 # pism-tutorials
 
-
-```{image} ./img/header_greenland.jpg
-:alt: PISM Greenland Simulated Surface Speeds
-:width: 75%
-:align: center
-```
+[![This shows simulated Greenland surface speeds at 2300 based on an RCP 8.5 Scenario.](img/header_greenland.jpg)](https://svs.gsfc.nasa.gov/13233/)
 
 
 ## Installation
