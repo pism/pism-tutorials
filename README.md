@@ -4,9 +4,11 @@
 [![linting: pylint](https://img.shields.io/badge/linting-pylint-yellowgreen)](https://github.com/pylint-dev/pylint)
 
 
-[![This shows the PISM logo.](img/pism_logo.png)](https://github.com/pism/logo)
 
-# pism-tutorials
+# pism-tutorials <img src="https://raw.githubusercontent.com/pism/pism-tutorials/main/img/pism_logo.png" width=80 />
+
+
+Welcome to _pism-tutorials_ using <img src="https://raw.githubusercontent.com/executablebooks/jupyter-book/master/docs/images/logo-square.svg" width=40 /> Jupyter Book.
 
 [![This shows simulated Greenland surface speeds at 2300 based on an RCP 8.5 Scenario.](img/header_greenland.jpg)](https://svs.gsfc.nasa.gov/13233/)
 
@@ -32,6 +34,7 @@ Install pism-tutorials:
 
     $ pip install .
 
+Note that this will install _PISM_ using the `conda`-channel `pism`, currently only available for _osx-arm64_ and _linux_ architectures.
 
 ## Building a Jupyter Book
 
