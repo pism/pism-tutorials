@@ -10,6 +10,7 @@ jupyter-book
 matplotlib
 pandas
 pint_xarray
+pyDOE2
 rioxarray
 s3fs
 seaborn
