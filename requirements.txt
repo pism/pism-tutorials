@@ -4,6 +4,7 @@ cf_units
 cftime
 dask[distributed,dataframe]
 h5netcdf
+geopandas
 jupyter
 jupyter-book
 matplotlib
