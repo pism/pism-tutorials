@@ -26,7 +26,7 @@ import xarray as xr
 
 
 def preprocess_nc(
-    ds,
+    ds: xr.Dataset,
     regexp: str = "id_(.+?)_",
     dim: str = "exp_id",
     drop_vars: list[str] | None = None,
@@ -44,23 +44,29 @@ def preprocess_nc(
     ds : xarray.Dataset
         The input dataset to be processed.
     regexp : str, optional
-        The regular expression pattern to extract the experiment identifier from the filename, by default "id_(.+?)_".
+        The regular expression pattern to extract the experiment identifier from the filename,
+        by default "id_(.+?)_".
     dim : str, optional
         The name of the new dimension to be added to the dataset, by default "exp_id".
-    drop_vars : list[str] | None, optional
+    drop_vars : list of str or None, optional
         A list of variable names to be dropped from the dataset, by default None.
-    drop_dims : list[str], optional
+    drop_dims : list of str or None, optional
         A list of dimension names to be dropped from the dataset, by default None.
 
     Returns
     -------
     xarray.Dataset
-        The processed dataset with the experiment identifier added as a new dimension, and specified variables and dimensions dropped.
+        The processed dataset with the experiment identifier added as a new dimension,
+        and specified variables and dimensions dropped.
 
     Raises
     ------
     AssertionError
         If the regular expression does not match any part of the filename.
+
+    Notes
+    -----
+    If `drop_dims` is not provided, it defaults to `["nv4"]`.
     """
     if drop_dims is None:  # Initialize drop_dims if not provided
         drop_dims = ["nv4"]

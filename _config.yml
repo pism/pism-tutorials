@@ -5,6 +5,9 @@ title: PISM Tutorials
 author: The PISM Developers
 logo: pism_logo.png
 
+launch_buttons:
+  notebook_interface: "jupyterlab"  # or "classic"
+
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
