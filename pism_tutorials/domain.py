@@ -16,7 +16,7 @@
 # along with PISM; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
-# pylint: disable=too-many-positional-arguments
+# pylint: disable=too-many-positional-arguments,unused-import
 
 """
 Module provides functions to handle domains.
@@ -24,6 +24,7 @@ Module provides functions to handle domains.
 
 import geopandas as gp
 import numpy as np
+import rioxarray
 import xarray as xr
 
 
