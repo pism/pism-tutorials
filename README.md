@@ -10,7 +10,7 @@
 
 Welcome to _pism-tutorials_ using <img src="https://raw.githubusercontent.com/executablebooks/jupyter-book/master/docs/images/logo-square.svg" width=40 /> Jupyter Book.
 
-[![This shows simulated Greenland surface speeds at 2300 based on an RCP 8.5 Scenario.](img/header_greenland.jpg)](https://svs.gsfc.nasa.gov/13233/)
+[![This shows simulated Greenland surface speeds at 2300 based on an RCP 8.5 Scenario.](pism-tutorials-jupyterbook/img/header_greenland.jpg)](https://svs.gsfc.nasa.gov/13233/)
 
 
 ## Installation
