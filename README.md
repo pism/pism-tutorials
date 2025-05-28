@@ -5,7 +5,7 @@
 
 
 
-# pism-tutorials <img src="https://raw.githubusercontent.com/pism/pism-tutorials/main/pism-tutorials-jupyterbook/img/pism_logo.png" width=80 />
+# pism-tutorials <img src="https://raw.githubusercontent.com/pism/pism-tutorials/main/img/pism_logo.png" width=80 />
 
 
 Welcome to _pism-tutorials_ using <img src="https://raw.githubusercontent.com/executablebooks/jupyter-book/master/docs/images/logo-square.svg" width=40 /> Jupyter Book.
